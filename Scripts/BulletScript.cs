@@ -20,11 +20,11 @@ public class BulletScript : MonoBehaviour
 
         if (collision.transform.tag == "Player")
         {
-            Character PlayerCharacter = collision.gameObject.GetComponent<Character>();
+            Character playerCharacter = collision.gameObject.GetComponent<Character>();
 
-            if (PlayerCharacter)
+            if (playerCharacter)
             {
-                PlayerCharacter.TakeDamage(5f, owner);
+                playerCharacter.TakeDamage(5f, owner);
             }
         }
 
